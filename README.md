@@ -35,8 +35,8 @@ applications in genomics, disease research, and synthetic biology.
 | Random Forest | 3 | 0.824 | 0.91 | 0.74 |
 
 ## Visualizations
-![ROC Curve](results/your_image_name.png)
-![KMer Comparison](results/your_other_image.png)
+![ROC Curve](results/roc_curve_1.png)
+![KMer Comparison](results/avg_promoter_count.png)
 
 ## Limitations
 - Small dataset (104 sequences) causes overfitting
