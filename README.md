@@ -34,6 +34,10 @@ applications in genomics, disease research, and synthetic biology.
 | Logistic Regression | 3 | 0.812 | 0.91 | 0.71 |
 | Random Forest | 3 | 0.824 | 0.91 | 0.74 |
 
+## Visualizations
+![ROC Curve](results/your_image_name.png)
+![KMer Comparison](results/your_other_image.png)
+
 ## Limitations
 - Small dataset (104 sequences) causes overfitting
 - Train accuracy = 1.0 vs test accuracy = 0.81 indicates memorization
