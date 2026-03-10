@@ -46,7 +46,7 @@ applications in genomics, disease research, and synthetic biology.
 ## How to Run
 ```bash
 pip install -r requirements.txt
-jupyter notebook notebooks/train 2 ml model.ipynb
+jupyter notebook notebooks/promoter_classification.ipynb
 ```
 
 ## Future Work
