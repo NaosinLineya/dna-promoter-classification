@@ -37,6 +37,7 @@ applications in genomics, disease research, and synthetic biology.
 ## Visualizations
 ![ROC Curve](results/roc_curve_1.png)
 ![KMer Comparison](results/avg_promoter_count.png)
+![Comparison of cross validation for RF and LR](results/kmer_cv_comparison.png)
 
 ## Limitations
 - Small dataset (104 sequences) causes overfitting
