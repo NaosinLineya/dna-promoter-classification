@@ -73,7 +73,8 @@ Class imbalance handled using class_weight='balanced'.
 ## Visualizations
 ![ROC Curve](results/roc_curve_1.png)
 ![KMer Comparison](results/avg_promoter_count.png)
-![Comparison of cross validation for RF and LR](results/kmer_cv_comparison.png)
+![Comparison of cross validation for RF and LR in dataset 1](results/kmer_cv_comparison.png)
+![Comparison of cross validation for RF and LR in dataset 2](results/kmer_cv_comparison(2).png)
 
 ## Limitations
 - Small dataset (104 sequences) causes overfitting
