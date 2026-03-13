@@ -10,9 +10,18 @@ to begin transcription. Computational detection of promoters has
 applications in genomics, disease research, and synthetic biology.
 
 ## Dataset
+-dataset:1
 - Source: UCI Machine Learning Repository (Promoter Gene Sequences)
 - 106 sequences: 53 promoters (+) and 53 non-promoters (-)
 - Organism: E. coli
+
+- dataset:2
+- Source: RegulonDB Sigma70 Benchmark Dataset
+- 2,141 sequences: 741 promoters and 1,400 non-promoters
+- Organism: E. coli
+- Sequence length: 81 bp
+- Note: Dataset has class imbalance (35% promoter, 65% non-promoter)
+  handled using class_weight='balanced'
 
 ## Methods
 ### Feature Engineering
