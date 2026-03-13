@@ -38,11 +38,38 @@ applications in genomics, disease research, and synthetic biology.
 - ROC-AUC Curve
 
 ## Results
+###dataset 1 result:
 | Model | k | Test Accuracy | Recall (Promoter) | Recall (Non-Promoter) |
 |---|---|---|---|---|
 | Logistic Regression | 3 | 0.812 | 0.91 | 0.71 |
 | Random Forest | 3 | 0.824 | 0.91 | 0.74 |
 
+###datset 2 result:
+
+All models evaluated using 5-fold stratified cross-validation on the 
+RegulonDB Sigma70 benchmark dataset (2,141 sequences).
+Class imbalance handled using class_weight='balanced'.
+
+#### Cross-Validation Results
+
+| Model | k | Mean Accuracy | Std Dev | Mean Recall (Promoter) | Mean Recall (Non-Promoter) |
+|---|---|---|---|---|---|
+| Logistic Regression | 2 | 0.7468 | 0.0118 | 0.7543 | 0.7429 |
+| Logistic Regression | 3 | 0.7567 | 0.0224 | 0.7638 | 0.7529 |
+| Logistic Regression | 4 | 0.7674 | 0.0094 | 0.7597 | 0.7714 |
+| Random Forest | 2 | 0.7581 | 0.0104 | 0.5547 | 0.8657 |
+| Random Forest | 3 | 0.7721 | 0.0135 | 0.5627 | 0.8829 |
+| Random Forest | 4 | 0.7669 | 0.0134 | 0.4912 | 0.9129 |
+
+#### Key Findings
+- Logistic Regression achieved balanced recall between both classes
+- Random Forest showed higher overall accuracy but consistently 
+  sacrificed promoter recall in favor of non-promoter detection
+- Low standard deviation across all models confirms stable and 
+  reliable performance
+- For biological applications, Logistic Regression is preferred 
+  since missing a real promoter carries higher biological cost 
+  than a false positive
 ## Visualizations
 ![ROC Curve](results/roc_curve_1.png)
 ![KMer Comparison](results/avg_promoter_count.png)
